@@ -13,7 +13,11 @@ body {
   font-family: 'futura-bk-bt', sans-serif;
 }
 
-.logo{
+.mini-nav-item:hover {
+  font-family: futura-bold !important;
+}
+
+.logo {
   width: 100px;
 }
 
@@ -34,6 +38,15 @@ body {
   transition: none !important;
 }
 
+.self-service:hover {
+  background-color: #6b0303 !important;
+}
+
+@media (max-width:630px){
+  .mini-nav{
+    display: none;
+  }
+}
 .products-group-style {
   border-top: 2px solid #A5303C;
   cursor: pointer;
@@ -194,15 +207,15 @@ label {
   display: inline-block;
 }
 
-.custom-select-container select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  border-bottom: 1px solid white;
-  background-color: #900000;
-  width: 100%;
-}
+  .custom-select-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #900000;
+    width: 100%;
+  }
 
 .custom-select {
   appearance: none;
@@ -269,7 +282,7 @@ label {
 }
 
 .navbar {
- /* height: 80px;*/
+  /* height: 80px;*/
 }
 
 .hero-section {
@@ -288,7 +301,7 @@ label {
 .carousel-item {
   background-size: cover;
   background-position: center;
- /* height: calc(100vh - 130px);*/
+  /* height: calc(100vh - 130px);*/
   /*position: relative*/
 }
 
@@ -300,15 +313,18 @@ label {
   font-size: 50px;
   font-weight: bolder;
 }*/
-  .hero-content h1 {
-    font-size: 2.5em;
-    font-weight: bolder;
-  }
+.hero-content h1 {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
 
-    .help {
-      position: absolute !important;
-      bottom: 0px !important;
-    }
+
+@media(min-width:770px) {
+  .help {
+    position: absolute !important;
+    bottom: 0px !important;
+  }
+}
 
 .product {
   border-top: 2px solid #e6e6e6;
@@ -327,15 +343,18 @@ label {
 }
 /*home*/
 .bg-fonts {
-  color: #900000; 
+  color: #900000;
   font-size: 12px;
 }
-.custodin-bg-color{
+
+.custodin-bg-color {
   background-color: #900000
 }
-.futura-bold{
+
+.futura-bold {
   font-family: futura-bold;
 }
+
 @media (max-width: 970px) {
   .col-md-6-about {
     width: 100%;
@@ -388,15 +407,13 @@ label {
   .footer-item {
     padding-top: 20px;
   }
-
-
 }
 
 .hero-content {
   position: absolute;
   top: 0;
   bottom: 0;
-  left:5%;
+  left: 5%;
   z-index: 1;
   display: flex;
   align-items: center;
