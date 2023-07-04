@@ -10,15 +10,15 @@
 </head>
 <body>
   <div class="nav-section">
-    <ul class="nav justify-content-end text-white bg px-5">
+    <ul class="nav mini-nav justify-content-end text-white bg px-5">
       <li class="nav-item m-0 p-2">
-        <a class="nav-link text-white p-2 bolder futura-bold" href="#">Claims</a>
+        <a class="nav-link text-white p-2 mini-nav-item" href="#">Claims</a>
       </li>
       <li class="nav-item m-0 p-2">
-        <a class="nav-link text-white custodian-number p-2" href="#">0700-Custodian</a>
+        <a class="nav-link text-white custodian-number p-2 mini-nav-item" href="#">0700-Custodian</a>
       </li>
       <li class="nav-item m-0 p-2">
-        <a class="nav-link text-white p-2 whatapp"> Whatapp: +234 808 567 8965</a>
+        <a class="nav-link text-white p-2 whatapp mini-nav-item"> Whatapp: +234 808 567 8965</a>
       </li>
     </ul>
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
@@ -266,10 +266,8 @@
     <a><img class="px-3 img-fluid" src="img/Google Play.png" width="200px" /></a>
   </div>
 </div>
-@section scripts{
   <script src="js/site.js"></script>
  
-}
   </div>
   <div class="container-fluid px-2 py-4 footer">
     <div class="mx-2 row py-5">
@@ -358,6 +356,5 @@
     });
 
   </script>
-  @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
